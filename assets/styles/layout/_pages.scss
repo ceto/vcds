@@ -1,0 +1,40 @@
+.row.container {
+  @media #{$large} {
+    padding:0 5%;
+  }
+  @media #{$xlarge} {
+    padding:0 7%;
+  }
+}
+.row.row--fullwidth {
+  @media #{$large} {
+    max-width: none;
+  }
+}
+
+
+.ps {
+  position: relative;
+  padding:4rem 0;
+  background-color: $white;
+}
+
+.ps--light {
+  background-color: $white-smoke;
+}
+.ps--inverse {
+  color:$white;
+  background-color: $black;
+  h1,h2,h3,h4,h5,h6 {
+    color:inherit;
+  }
+}
+
+.home__vag {
+  background-image: url('../images/hero-home.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center 100%;
+  background-attachment: fixed;
+  padding:6rem 0;
+}

@@ -1,0 +1,28 @@
+.sitefooter {
+  color:$steel;
+  background-color: $black;
+
+  a {
+    &:hover, &:focus {
+      color:$smoke;
+    }
+  }
+  b, strong {
+    font-weight: 700;
+  }
+}
+.sitefooter__fat {
+  padding:4rem 0;
+  background-color: $oil;
+}
+
+.sitefooter__narrow {
+  font-size: .875rem;
+  padding:1rem;
+  background-color: $black;
+  .copy {
+    @media #{$medium} {
+      text-align: right;
+    }
+  }
+}

@@ -1,0 +1,57 @@
+.menu {
+  list-style-type: none;
+  margin:0;
+  padding:0;
+  li {
+    padding:0;
+    margin:0;
+  }
+}
+
+
+.menu--sitenav {
+  @media #{$medium} {
+    float:right;
+  }
+  li {
+
+    display: block;
+    font-size: 2rem;
+    line-height: 2;
+    > a {
+      display: block;
+      padding:0 1.5rem;
+      color:$body-font-color;
+      &:hover, &:focus {
+        background-color: $anchor-font-color-hover;
+        color:$white;
+      }
+    }
+
+    &.active {
+      > a {
+        background-color: $anchor-font-color;
+        color:$white;
+      }
+    }
+
+    @media #{$medium} {
+      float:left;
+      font-size: 1.125rem;
+      line-height: 4;
+    }
+  }
+}
+
+.menu--footernav {
+  li {
+    > a {
+      display: block;
+      padding:.125rem 0;
+      &:hover, &:focus {
+        color:$smoke;
+      }
+
+    }
+  }
+}
