@@ -8,14 +8,16 @@
   "private": true,
   "dependencies": {
     "foundation": "~5.5.3",
-    "magnific-popup": "~1.0.0"
+    "magnific-popup": "~1.0.0",
+    "jquery-sticky": "sticky#~1.0.3"
   },
   "overrides": {
     "foundation": {
       "main": [
         "scss/normalize.scss",
         "scss/foundation.scss",
-        "js/foundation/foundation.js"
+        "js/foundation/foundation.js",
+        "js/foundation/foundation.magellan.js"
       ]
     }
   }

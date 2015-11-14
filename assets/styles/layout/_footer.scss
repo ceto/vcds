@@ -1,24 +1,25 @@
 .sitefooter {
-  color:$steel;
+  color:$aluminum;
   background-color: $black;
 
   a {
+    color:$smoke;
     &:hover, &:focus {
-      color:$smoke;
+      color:$primary-color;
     }
   }
   b, strong {
-    font-weight: 700;
+    //font-weight: 700;
   }
 }
 .sitefooter__fat {
-  padding:4rem 0;
+  padding:2.5rem 0;
   background-color: $oil;
 }
 
 .sitefooter__narrow {
   font-size: .875rem;
-  padding:1rem;
+  padding:1rem 0;
   background-color: $black;
   .copy {
     @media #{$medium} {

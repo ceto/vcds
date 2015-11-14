@@ -1,3 +1,14 @@
+body, html {
+  font-size: 90%;
+  @media #{$large} {
+    font-size: 100%;
+  }
+
+  @media #{$xxlarge} {
+    font-size: 110%;
+  }
+}
+
 .row.container {
   @media #{$large} {
     padding:0 5%;
@@ -19,6 +30,10 @@
   background-color: $white;
 }
 
+.ps--nopad {
+  padding:0
+}
+
 .ps--light {
   background-color: $white-smoke;
 }
@@ -37,4 +52,18 @@
   background-position: center 100%;
   background-attachment: fixed;
   padding:6rem 0;
+}
+
+
+.page-template-template-accordion {
+  .sidebar {
+    padding-top: 2rem;
+  }
+  .content {
+    padding-top: 2rem;
+    padding-bottom: 8rem;
+    @media #{$large} {
+      border-left:1px solid $smoke;
+    }
+  }
 }

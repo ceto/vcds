@@ -4,8 +4,11 @@
     <div class="hero__block">
       <div class="hero__text">
         <div class="row container">
-          <div class="columns medium-10 medium-centered text-center">
-            <h1 class="hero__title"><?= Titles\title(); ?></h1>
+          <div class="columns large-9 large-push-3">
+            <h1 class="hero__title">
+              <a class="sunyi" href="<?= get_permalink($post->post_parent);  ?>"><?= get_the_title( $post->post_parent); ?>:</a>
+              <?= Titles\title(); ?>
+            </h1>
           </div><!-- /.columns -->
         </div><!-- /.row -->
       </div><!-- /.hero__text -->

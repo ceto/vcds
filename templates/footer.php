@@ -6,10 +6,16 @@
           <h3 class="widget__title">Megvásárolható</h3>
           <p>
             <strong>Auto M3 Kft.</strong><br>
+            <em>magyarországi forgalmazó</em>
+          </p>
+          <p>
+            <strong>Cím</strong><br>
             1154 Budapest,<br>
             Tompa Mihály u. 76.
           </p>
-          <p>Telefon: <a href="tel:+36 1 306 3203">+36 1 306 3203</a>
+          <p><strong>Kapcsolatfelvétel</strong><br>
+            Telefon: <a href="tel:+36 1 306 3203">+36 1 306 3203</a><br>
+            Mobil: <a href="tel:+36 1 306 3203">+36 1 306 3203</a>
           </p>
         </div>
       </div>
@@ -18,9 +24,11 @@
           <h3 class="widget__title">Helpdesk</h3>
           <p>
             <strong>Molnár Szilveszter</strong><br>
-            <em>VCDS magyarországi gondozója</em>
+            <em>VCDS honosítója</em>
           </p>
-          <p>Telefon: <a href="tel:+36 1 306 3203">+36 1 306 3203</a><br>
+
+          <p><strong>Elérhetőség</strong><br>
+          Telefon: <a href="tel:+36 1 306 3203">+36 1 306 3203</a><br>
           Email: <a href="mailto:moszi@vcds.hu">moszi@vcdss.hu</a>
           </p>
         </div>
@@ -28,12 +36,24 @@
       <div class="columns medium-4">
         <div class="widget widget--footer">
           <h3 class="widget__title">Segédletek</h3>
-          <nav class="sitenav">
+          <nav class="footernav">
             <?php
-            if (has_nav_menu('primary_navigation')) :
-              wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_class' => 'menu menu--footernav']);
-            endif;
+                $the_bparents = new WP_Query( array(
+                  'post_parent'  => 8,
+                  'post_type' => array('page'),
+                  'nopaging' => true,
+                  'posts_per_page' => -1
+                ));
             ?>
+            <ul class="menu menu--footernav">
+              <?php while ($the_bparents->have_posts()) : $the_bparents->the_post() ?>
+                <li <?= ($post->ID == $actpageid)?'class="active"':''; ?>>
+                  <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+                </li>
+              <?php endwhile; ?>
+              <?php wp_reset_query(); ?>
+            </ul>
+
           </nav>
         </div>
       </div>

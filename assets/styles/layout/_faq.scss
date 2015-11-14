@@ -1,0 +1,24 @@
+.tocblock {
+}
+.tocblock__title {
+  color:$oil;
+  border-bottom: 1px solid currentColor;
+  margin-bottom:2rem;
+  padding-bottom: 1rem;
+  @media #{$medium} {
+    //font-size: 1.5rem;
+  }
+
+  > a {
+    color:inherit;
+  }
+}
+
+.faq {
+  padding-top:2rem;
+  padding-bottom: 1rem;
+}
+
+.faq__title {
+  //color:$primary-color;
+}
