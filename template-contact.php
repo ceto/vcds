@@ -10,7 +10,7 @@
 
   <section class="ps">
     <div class="row container">
-      <div class="columns">
+      <div class="columns content">
         <div class="row">
           <div class="columns medium-6 large-6">
             <h2>Termékinformációk, segítségnyújtás</h2>

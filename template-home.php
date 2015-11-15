@@ -10,7 +10,7 @@
 
   <section class="ps">
     <div class="row container">
-      <div class="columns">
+      <div class="columns content">
         <div class="row">
           <div class="columns medium-6 large-6">
             <h2>Autódiagnosztikai rendszer</h2>
@@ -31,7 +31,7 @@
 
   <section class="ps ps--inverse home__vag">
     <div class="row container">
-      <div class="columns">
+      <div class="columns content">
         <div class="row">
           <div class="columns large-push-6 large-6">
             <h2>Eredeti VCDS csatoló</h2>
@@ -60,7 +60,7 @@
 
   <section class="ps">
     <div class="row container">
-      <div class="columns">
+      <div class="columns content">
         <div class="row">
           <div class="columns medium-7 large-8">
             <h2>Magyar nyelvű szoftver</h2>

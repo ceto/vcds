@@ -15,7 +15,7 @@
   ?>
   <section class="ps <?php // echo (++$i%2==0)?'ps--light':''; ?>">
     <div class="row container">
-      <div class="columns">
+      <div class="columns content">
         <ul class="small-block-grid-1 medium-block-grid-2">
           <?php while ($the_children->have_posts()) : $the_children->the_post() ?>
             <li><section class="tocblock">
