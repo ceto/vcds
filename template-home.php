@@ -35,7 +35,7 @@
         <div class="row">
           <div class="columns large-push-6 large-6">
             <h2>Eredeti VCDS csatoló</h2>
-            <p>Az autodiagnosztikai szoftver funkciói, kizárólag az eredeti HEX-CAN csatolóval működnek teljeskörűen. Az eredeti csatoló használatának előnyei</p>
+            <p>Az autodiagnosztikai szoftver funkciói, kizárólag az eredeti csatolóval működnek teljeskörűen. Az eredeti csatoló használatának előnyei</p>
             <ul>
               <li><strong>Korlátlanul frissíthető</strong> magyar nyelvű szoftver licensz</li>
               <li><strong>18003 hibakódot</strong> tartalmazó adatbázis</li>
@@ -49,9 +49,57 @@
             <a href="#" class="button small">Hol kapható</a>
           </div>
           <div class="columns large-6 large-pull-6">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum perferendis enim ipsam quo illum dicta necessitatibus cumque.
+            <ul class="small-block-grid-2 medium-block-grid-3 large-block-grid-2 xxlarge-block-grid-3 gallery gallery--vag">
+              <li>
+                <a class="gallery__item" href="http://placehold.it/1600x1200/cecece" title="KII-USB csatoló">
+                  <img src="http://placehold.it/640x480/cecece" alt="">
+                </a>
+              </li>
+              <li>
+                <a class="gallery__item" href="http://placehold.it/1600x1200/2a2a2a" title="HEX-USB+CAN csatoló">
+                  <img src="http://placehold.it/640x480/2a2a2a" alt="">
+                </a>
+              </li>
+            </ul>
           </div>
 
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="ps ps--light aps--inverse ahome__vag">
+    <div class="row container">
+      <div class="columns content">
+        <div class="row">
+          <div class="columns ">
+            <h2>Megvásárolható csatolók</h2>
+            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            <p>&nbsp;</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="columns medium-4">
+            <p><img src="http://placehold.it/600x300" alt=""></p>
+            <h3>KII-USB</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod doloremque, inventore neque autem omnis consectetur quia, pariatur atque.</p>
+          </div>
+          <div class="columns medium-4">
+            <p><img src="http://placehold.it/600x300" alt=""></p>
+            <h3>Micro-CAN </h3>
+            <p>Consectetur adipisicing elit. Quod doloremque, inventore neque autem omnis consectetur quia, pariatur atque ratione accusantium sit, laborum!</p>
+          </div>
+          <div class="columns medium-4">
+            <p><img src="http://placehold.it/600x300" alt=""></p>
+            <h3>HEX-USB+CAN</h3>
+            <p>Quod doloremque, inventore neque autem omnis consectetur quia, pariatur atque ratione accusantium sit, laborum! A ut ad dolorum adipisci tenetur. Harum, quia?</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="columns">
+            <a href="#" class="button small">Csatolók összehasonlítása</a>
+          </div>
         </div>
 
       </div>
@@ -68,7 +116,11 @@
             <p><small>Minimális rendszerkövetelmény: Pentium III 1GHz, 256 MB RAM, Windows XP/Vista/7/8/10</small></p>
           </div>
           <div class="columns medium-5 large-4">
-            <p>Letöltés orem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            <div class="widget widget--dl">
+              <a class="dldldl" href="#"><img src="<?= get_template_directory_uri(); ?>/dist/images/dl.png" alt="Letöltés"><br>
+              VCDS-HGJ szoftver letöltése</a>
+              <p><small>Verzió: 15.7.1 | Kiadás: 2015.09.04.</small></p>
+            </div>
           </div>
         </div>
       </div>

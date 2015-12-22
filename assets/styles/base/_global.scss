@@ -1,1 +1,5 @@
-
+ul, ol {
+  li {
+    margin-bottom: $list-margin-bottom/2;
+  }
+}

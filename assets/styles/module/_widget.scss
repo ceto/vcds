@@ -10,3 +10,25 @@
     margin:1.5rem 0;
   }
 }
+
+
+.widget--dl {
+  text-align: center;
+  //background-color: red;
+  .dldldl {
+    margin-top: 1rem;
+    display: inline-block;
+    max-width: 16rem;
+    font-size: 1rem;
+    line-height: 1.2;
+    font-weight: $font-weight-bold;
+    img {
+      margin-bottom: 1.5rem;
+      max-width: 5rem;
+    }
+
+    &:hover,&:focus {
+      text-decoration: underline;
+    }
+  }
+}

@@ -11,7 +11,7 @@
 
       <div class="columns">
         <div class="row">
-          <div class="columns large-3 sidebar">
+          <div class="columns medium-4 large-3 sidebar">
               <?php
                 $actpageid = $post->ID;
                 $the_parents = new WP_Query( array(
@@ -44,7 +44,7 @@
               </ul>
             </nav>
           </div>
-          <div class="columns large-9 content">
+          <div class="columns medium-8 large-9 content">
             <?php if ( isset($pageblocks) ) : ?>
              <?php foreach ( (array) $pageblocks as $key => $entry ) : ?>
                 <article class="faq" data-magellan-destination="<?= sanitize_title( $entry['title'] ); ?>" name="<?= sanitize_title( $entry['title'] ); ?>" id="<?= sanitize_title( $entry['title'] ); ?>">

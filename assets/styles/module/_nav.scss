@@ -1,3 +1,83 @@
+.siteheader {
+  background-color: $white;
+}
+.brand {
+  display: inline-block;
+  //background-color: red;
+  font-weight: $font-weight-bold;
+  font-size: 2rem;
+  line-height: 1;
+  letter-spacing: .0666rem;
+  color:$oil;
+  margin:1.125rem 0 0;
+  span {
+    padding-left: 1.875rem;
+    margin-top: .0.666rem;
+    display: block;
+    font-size: .75rem;
+    font-weight: $font-weight-bold;
+    //color:$oil;
+    letter-spacing: 0;
+    //text-transform: uppercase;
+  }
+
+  &:hover, &:focus {
+    color:$steel;
+  }
+}
+
+.menutoggler {
+  display: inline-block;
+  float:right;
+  //background-color: red;
+  font-size: 1.25rem;
+  line-height: 4;
+  @media #{$medium} {
+    display: none;
+  }
+
+}
+
+.navtoggle {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+  display: none;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.navtoggle:checked + .sitenav {
+  height: 16rem;
+  visibility:visible;
+  opacity:1;
+  padding: 1.25rem 0;
+  background-color: $white-smoke;
+  border-top: 1px solid $gainsboro;
+  @media #{$medium} {
+    padding: 0;
+    background-color: transparent;
+    border-top: none;
+  }
+}
+
+.sitenav {
+  overflow: hidden;
+  height: 0;
+  visibility:hidden;
+  opacity:0;
+  transition: all .2s ease;
+  margin:0 -27px;
+  @media #{$medium} {
+    height: auto;
+    visibility:visible;
+    opacity:1;
+    margin:0;
+    padding:0;
+
+  }
+}
+
 .menu, .sub-menu {
   list-style-type: none;
   margin:0;
@@ -10,12 +90,14 @@
 
 
 .menu--sitenav {
-  font-size: 2rem;
-  line-height: 2;
+  font-size: 1.333rem;
+  line-height: 2.5;
+  font-weight: 400;
+  text-transform: lowercase;
   @media #{$medium} {
     float:right;
     font-size: 1.125rem;
-    line-height: 4;
+    line-height: 4.5;
   }
   li {
 
@@ -23,7 +105,7 @@
 
     > a {
       display: block;
-      padding:0 1.5rem;
+      padding:0 1.666rem;
       color:$body-font-color;
       &:hover, &:focus {
         background-color: $anchor-font-color-hover;
@@ -46,7 +128,8 @@
 }
 
 .menu--footernav {
-  font-size: 1.125rem;
+  //font-size: 1rem;
+  font-weight: $font-weight-bold;
   li {
     padding: 0 0 .5rem 0;
     > a {
@@ -62,7 +145,7 @@
 
 .sidebarnav {
   //border-right: 1px solid $gainsboro;
-  margin-bottom: 2rem;
+  //margin-bottom: 1rem;
   padding-top: 2.5rem;
   h3 {
     font-size: .875rem;
@@ -79,20 +162,33 @@
   @media #{$medium} {
     font-size: .75rem;
   }
-
+  
+  li {
+    > a {
+      color:$body-font-color;
+      &:hover {
+        color:$primary-color;
+      }
+    }
+  }
   > li {
     padding:0 0 .75rem;
-    margin-bottom: .75rem;
+    margin-bottom: .875rem;
     &:not(:last-of-type) {
       //border-bottom: 1px solid $gainsboro;
     }
+    > a {
+      //color:$primary-color;
+    }
+    &.active {
+      > a {
+        color:$primary-color;
+      }
+    }
+
   }
 
-  li {
-    > a {
-      //color:$body-font-color;
-    }
-  }
+
 }
 
 
@@ -108,7 +204,10 @@
   > li {
     padding:0 0 .5rem 0;
     &.active {
-      font-weight: 600;
+      > a {
+        font-weight: $font-weight-bold;
+        //color:$primary-color;
+      }
     }
   }
 }
@@ -121,6 +220,7 @@
   > li {
     padding:0 0 .875rem 0;
     > a {
+      //color:$body-font-color;
     }
   }
 }

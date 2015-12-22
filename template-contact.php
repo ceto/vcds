@@ -10,10 +10,10 @@
 
   <section class="ps">
     <div class="row container">
-      <div class="columns content">
+      <div class="columns large-10 large-centered content">
         <div class="row">
           <div class="columns medium-6 large-6">
-            <h2>Termékinformációk, segítségnyújtás</h2>
+            <h2>Termékinformációk, segítség</h2>
             <p>
               <strong>Molnár Szilveszter</strong><br>
               <em>VCDS honosítója</em>
@@ -64,17 +64,49 @@
 
 
 
-  <section class="ps">
+  <section class="ps ps--light">
     <div class="row container">
       <div class="columns">
         <div class="row">
-          <div class="columns medium-8 medium-centered">
+          <div class="columns medium-8 medium-centered large-6 content">
             <h2>Segíthetünk?</h2>
             <p>Írjon nekünk űrlapunkon keresztül. A termékkel kapcsolatban bármilyen segítségnyújtásban szívesen állunk rendelkezezésére.</p>
+            <form>
+              <div class="row">
+                <div class="columns">
+                  <label>Név
+                    <input type="text" placeholder="Adja meg nevét (kötelező)" />
+                  </label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="columns">
+                  <label>Email
+                    <input type="email" placeholder="Email címét (kötelező)" />
+                  </label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="columns">
+                  <label>Telefon
+                    <input type="tel" placeholder="Telefon" />
+                  </label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="columns">
+                  <label>Üzenet
+                    <textarea placeholder="Kezdejen el írni" rows="6"></textarea>
+                  </label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="columns text-center">
+                  <button type="submit" class="button small expand">Küldés</button>
+                </div>
+              </div>
+            </form>
 
-            <h1>Ürlap helye</h1>
-            <h2>Kell ez? Fog rá valaki válaszolni</h2>
-            <p>vagy egyáltalán ebben a témában van értelme kapcsolatfelvételi űrlapnak. Fogja vlaki használni?</p>
             <p><small>Köszönjük érdeklődését. Munkatársunk hamarosan megkeresi Önt a megadott elérhetőségek egyikén.</small></p>
           </div>
 

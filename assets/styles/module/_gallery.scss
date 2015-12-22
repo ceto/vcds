@@ -1,0 +1,28 @@
+.gallery {
+  margin-top:$paragraph-margin-bottom;
+
+  li {
+    padding-bottom: 1.25rem;
+  }
+}
+.gallery__item {
+  display: block;
+  border:1px solid rgba($white,.75);
+  padding:.25rem;
+  //background-color: rgba($white,.125);
+  &:hover, &:focus {
+    border-color: rgba($primary-color,.75);
+  }
+
+}
+
+
+
+.home__vag {
+
+  .gallery {
+    @media #{$large} {
+      margin-top: 21.25rem;
+    }
+  }
+}

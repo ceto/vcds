@@ -2,9 +2,9 @@
 }
 .tocblock__title {
   color:$oil;
-  //border-bottom: 1px solid currentColor;
-  //margin-bottom:2rem;
-  //padding-bottom: 1rem;
+  border-bottom: 1px solid currentColor;
+  margin-bottom:1.5rem;
+  padding-bottom: 1rem;
   @media #{$medium} {
     //font-size: 1.5rem;
   }

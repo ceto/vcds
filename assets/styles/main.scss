@@ -6,9 +6,11 @@
 @import "../../bower_components/foundation/scss/foundation.scss";
 // endbower
 
+@import "base/global";
 @import "module/nav";
 @import "module/hero";
 @import "module/widget";
+@import "module/gallery";
 @import "layout/pages";
 @import "layout/faq";
 @import "layout/footer";

@@ -1,9 +1,11 @@
 <header class="siteheader">
   <div class="row container">
-    <div class="columns medium-4">
-      <a class="brand" href="<?= esc_url(home_url('/')); ?>"><?php bloginfo('name'); ?></a>
+    <div class="columns medium-3">
+      <a class="brand" href="<?= esc_url(home_url('/')); ?>">VCDS<span>autodiagnosztika</span></a>
+      <label for="navtoggle" class="menutoggler">MENÜ</label>
     </div>
-    <div class="columns medium-8">
+    <div class="columns medium-9">
+      <input type="checkbox" class="navtoggle" id="navtoggle" name="navtoggle">
       <nav class="sitenav">
         <?php
         if (has_nav_menu('primary_navigation')) :
