@@ -1,38 +1,7 @@
 <footer class="sitefooter">
   <section class="sitefooter__fat">
     <div class="row container">
-      <div class="columns medium-4">
-        <div class="widget widget--footer">
-          <h3 class="widget__title">Megvásárolható</h3>
-          <p>
-            <strong>Auto M3 Kft.</strong><br>
-            <em>magyarországi forgalmazó</em>
-          </p>
-          <p>
-            <strong>Cím</strong><br>
-            1154 Budapest,<br>
-            Tompa Mihály u. 76.
-          </p>
-          <p><strong>Kapcsolatfelvétel</strong><br>
-            Telefon: <a href="tel:+36 1 306 3203">+36 1 306 3203</a><br>
-            Mobil: <a href="tel:+36 1 306 3203">+36 1 306 3203</a>
-          </p>
-        </div>
-      </div>
-      <div class="columns medium-4">
-        <div class="widget widget--footer">
-          <h3 class="widget__title">Helpdesk</h3>
-          <p>
-            <strong>Molnár Szilveszter</strong><br>
-            <em>VCDS honosítója</em>
-          </p>
-
-          <p><strong>Elérhetőség</strong><br>
-          Telefon: <a href="tel:+36 1 306 3203">+36 1 306 3203</a><br>
-          Email: <a href="mailto:moszi@vcds.hu">moszi@vcdss.hu</a>
-          </p>
-        </div>
-      </div>
+      <?php dynamic_sidebar('sidebar-footer'); ?>
       <div class="columns medium-4">
         <div class="widget widget--footer">
           <h3 class="widget__title">Segédletek</h3>

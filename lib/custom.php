@@ -57,5 +57,62 @@ function vcds_metaboxes() {
       'id'   => 'content2',
       'type' => 'wysiwyg',
     ) );
+
+
+    /*** Contact page editable sections ****/
+
+    $cmb_contactpage = new_cmb2_box( array(
+      'id'            => 'contact_metabox',
+      'title'         => __( 'Kiegészítő tartalom', 'cmb2' ),
+      'object_types'  => array( 'page'), // Post type
+      'show_on'      => array( 'key' => 'page-template', 'value' => 'template-contact.php' ),
+      'context'       => 'normal',
+      'priority'      => 'high',
+      'show_names'    => true, // Show field names on the left
+      // 'cmb_styles' => false, // false to disable the CMB stylesheet
+      'closed'     => false, // Keep the metabox closed by default
+    ) );
+
+    $cmb_contactpage->add_field( array(
+        'name'       => __( 'Segédtartalom', 'cmb2' ),
+        'desc'       => __( '2. oszlop szövege', 'cmb2' ),
+        'id'         => $prefix . 'content2',
+        'type'       => 'wysiwyg'
+    ) );
+
+
+    /*** Home page editable sections ****/
+
+    $cmb_homepage = new_cmb2_box( array(
+      'id'            => 'home_metabox',
+      'title'         => __( 'Kiegészítő tartalom', 'cmb2' ),
+      'object_types'  => array( 'page'), // Post type
+      'show_on'      => array( 'key' => 'page-template', 'value' => 'template-home.php' ),
+      'context'       => 'normal',
+      'priority'      => 'high',
+      'show_names'    => true, // Show field names on the left
+      // 'cmb_styles' => false, // false to disable the CMB stylesheet
+      'closed'     => false, // Keep the metabox closed by default
+    ) );
+
+    $cmb_homepage->add_field( array(
+        'name'       => __( 'Intro', 'cmb2' ),
+        'desc'       => __( 'Nyitóoldal hero alatti szekció', 'cmb2' ),
+        'id'         => $prefix . 'intro',
+        'type'       => 'wysiwyg'
+    ) );
+    $cmb_homepage->add_field( array(
+        'name'       => __( 'Helper', 'cmb2' ),
+        'desc'       => __( 'Nyitóoldal 3. szöveges blokk képpel', 'cmb2' ),
+        'id'         => $prefix . 'content2',
+        'type'       => 'wysiwyg'
+    ) );
+    $cmb_homepage->add_field( array(
+        'name'       => __( 'Harmadik blokk', 'cmb2' ),
+        'desc'       => __( 'Nyitóoldal 4. szöveges blokk', 'cmb2' ),
+        'id'         => $prefix . 'content3',
+        'type'       => 'wysiwyg'
+    ) );
+
 }
 

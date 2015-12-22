@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Accordion Template
+ * Template Name: Dokumentációs oldalsablon
  */
 ?>
 

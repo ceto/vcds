@@ -13,35 +13,11 @@
       <div class="columns large-10 large-centered content">
         <div class="row">
           <div class="columns medium-6 large-6">
-            <h2>Termékinformációk, segítség</h2>
-            <p>
-              <strong>Molnár Szilveszter</strong><br>
-              <em>VCDS honosítója</em>
-            </p>
-            <p><strong>Elérhetőség</strong><br>
-            Telefon: <a href="tel:+36 1 306 3203">+36 1 306 3203</a><br>
-            Email: <a href="mailto:moszi@vcds.hu">moszi@vcdss.hu</a>
-            </p>
-            <a href="#" class="button small">Üzenet küldése</a>
+            <?php the_content(); ?>
           </div>
 
           <div class="columns medium-6 large-6">
-            <h2>Vásárlás</h2>
-            <p>
-              <strong>Auto M3 Kft.</strong><br>
-              <em>magyarországi forgalmazó</em>
-            </p>
-            <p>
-              <strong>Cím</strong><br>
-              1154 Budapest,<br>
-              Tompa Mihály u. 76.
-            </p>
-            <p><strong>Kapcsolatfelvétel</strong><br>
-              Telefon: <a href="tel:+36 1 306 3203">+36 1 306 3203</a><br>
-              Mobil: <a href="tel:+36 1 306 3203">+36 1 306 3203</a>
-            </p>
-            <p>További információk a <a href="http://am3.hu">forgalmazó honlapján.</a>
-            </p>
+            <?= wpautop(get_post_meta( get_the_ID(), '_cmb_content2', true )); ?>
           </div>
 
         </div>

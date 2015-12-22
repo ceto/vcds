@@ -49,7 +49,7 @@
   }
 }
 
-.hero__title {
+.hero__title, .hero h1 {
   color:$primary-color;
   line-height: 1.2;
   margin-bottom: .5em;
@@ -69,7 +69,7 @@
   }
 }
 
-.hero__lead {
+.hero__lead, .hero p{
   font-size: 1.125rem;
   strong {
   //  color:$primary-color;
@@ -80,6 +80,6 @@
 
 }
 
-.hero__action {
+.hero__action, .hero .button {
   margin-bottom: 0;
 }
