@@ -10,7 +10,7 @@
 
   <section class="ps">
     <div class="row container">
-      <div class="columns large-10 large-centered content">
+      <div class="columns content">
         <div class="row">
           <div class="columns medium-6 large-6">
             <?php the_content(); ?>

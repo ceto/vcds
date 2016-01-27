@@ -1,14 +1,23 @@
-<?php get_template_part('templates/page', 'header'); ?>
+<?php get_template_part('templates/hero', 'page'); ?>
 
 <?php if (!have_posts()) : ?>
-  <div class="alert alert-warning">
-    <?php _e('Sorry, no results were found.', 'sage'); ?>
-  </div>
-  <?php get_search_form(); ?>
+  <section class="ps">
+    <div class="row container">
+      <div class="columns medium-6 medium-centered large-6">
+        <div class="alert alert-warning">
+          <?php _e('Sorry, no results were found.', 'sage'); ?>
+        </div>
+        <?php get_search_form(); ?>
+      </div>
+    </div>
+  </section>
+<?php else: ?>
+
+<section class="postlist">
+  <?php while (have_posts()) : the_post(); ?>
+    <?php get_template_part('templates/content'); ?>
+  <?php endwhile; ?>
+  <?php the_posts_navigation(); ?>
+</section>
+
 <?php endif; ?>
-
-<?php while (have_posts()) : the_post(); ?>
-  <?php get_template_part('templates/content', 'search'); ?>
-<?php endwhile; ?>
-
-<?php the_posts_navigation(); ?>

@@ -6,13 +6,7 @@
   }
 }
 .gallery__item {
-  display: block;
-  border:1px solid rgba($white,.75);
-  padding:.25rem;
-  //background-color: rgba($white,.125);
-  &:hover, &:focus {
-    border-color: rgba($primary-color,.75);
-  }
+
 
 }
 
@@ -24,5 +18,24 @@
     @media #{$large} {
       margin-top: 21.25rem;
     }
+  }
+}
+
+
+.gallery__item {
+  margin:0;
+  a {
+    display: block;
+    border:1px solid rgba($white,.75);
+    padding:.25rem;
+    &:hover, &:focus {
+      border-color: rgba($primary-color,.75);
+    }
+  }
+  figcaption {
+    text-align: center;
+    font-size: .75rem;
+    font-style: italic;
+    margin-top:.25em;
   }
 }

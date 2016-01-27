@@ -48,7 +48,7 @@
 }
 
 .navtoggle:checked + .sitenav {
-  height: 16rem;
+  min-height: 19rem;
   visibility:visible;
   opacity:1;
   padding: 1.25rem 0;
@@ -105,11 +105,14 @@
 
     > a {
       display: block;
-      padding:0 1.666rem;
+      padding:0 1.333rem;
       color:$body-font-color;
       &:hover, &:focus {
         background-color: $anchor-font-color-hover;
         color:$white;
+      }
+      @media #{$large} {
+        padding:0 1.6666rem;
       }
     }
 
@@ -162,7 +165,7 @@
   @media #{$medium} {
     font-size: .75rem;
   }
-  
+
   li {
     > a {
       color:$body-font-color;

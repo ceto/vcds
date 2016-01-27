@@ -123,7 +123,7 @@ $(document).ready(function(){
     image: {
       tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
       titleSrc: function(item) {
-        return item.el.attr('title') + '<small>vcds.hu</small>';
+        return item.el.children('img').attr('alt') + '<small>vcds.hu</small>';
       }
     }
   });

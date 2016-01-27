@@ -396,7 +396,7 @@ $include-xl-html-block-grid-classes: true;
 
 // We use this to control the maximum number of block grid elements per row
 // $block-grid-elements: 12;
-$block-grid-default-spacing: $column-gutter;
+$block-grid-default-spacing: $column-gutter/2;
 
 // $align-block-grid-to-grid: false;
 // @if $align-block-grid-to-grid {$block-grid-default-spacing: $column-gutter;}

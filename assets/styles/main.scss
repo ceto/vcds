@@ -1,5 +1,4 @@
 @import "settings";
-
 // Automatically injected Bower dependencies via wiredep (never manually edit this block)
 // bower:scss
 @import "../../bower_components/foundation/scss/normalize.scss";
@@ -12,5 +11,6 @@
 @import "module/widget";
 @import "module/gallery";
 @import "layout/pages";
+@import "layout/posts";
 @import "layout/faq";
 @import "layout/footer";

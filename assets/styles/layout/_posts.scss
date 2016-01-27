@@ -1,0 +1,32 @@
+.single__content {
+
+}
+
+
+.postlist {
+  // padding-top: 4rem;
+  // padding-bottom: 4rem;
+  > .hentry:nth-of-type(2n+1){
+    background-color: $white-smoke;
+  }
+}
+.post__thumbnail {
+  margin:.875rem 0;
+}
+.post__title {
+  margin-bottom:0;
+}
+.post__summary {
+  margin-top: .75rem;
+  p{
+    margin-bottom: 0;
+  }
+}
+.readmore {
+  margin-top: 1rem;
+  margin-bottom: 0;
+}
+
+.comments {
+  background-color: $white-smoke;
+}

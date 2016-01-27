@@ -11,10 +11,13 @@ body, html {
 
 .row.container {
   @media #{$large} {
-    padding:0 5%;
+    padding-left: 5%;
+    padding-right: 5%;
   }
   @media #{$xlarge} {
-    padding:0 7%;
+    padding-left: 7%;
+    padding-right: 7%;
+
   }
 }
 .row.row--fullwidth {
@@ -29,6 +32,11 @@ body, html {
   padding:4rem 0;
   background-color: $white;
 }
+
+.ps--kispad {
+  padding:4rem 0;
+}
+
 
 .ps--nopad {
   padding:0
