@@ -1,5 +1,3 @@
-<?php dynamic_sidebar('sidebar-primary'); ?>
-
 <section class="ps">
   <div class="row container">
     <div class="columns">

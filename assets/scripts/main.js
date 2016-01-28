@@ -95,7 +95,7 @@ $(document).ready(function(){
     //var fh = $('.sitefooter').height()+200;
     $('.sidebarnav').sticky({
       topSpacing:0,
-      bottomSpacing: $('.sitefooter').height()+155
+      bottomSpacing: $('.sitefooter').height()+$('.sidebar').height()+155
     });
   }
 
@@ -105,7 +105,7 @@ $(document).ready(function(){
       //var fh = $('.sitefooter').height()+200;
       $('.sidebarnav').sticky({
         topSpacing:0,
-        bottomSpacing: $('.sitefooter').height()+155
+        bottomSpacing: 0
       });
     }
   });

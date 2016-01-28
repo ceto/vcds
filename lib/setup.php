@@ -58,8 +58,8 @@ function widgets_init() {
   register_sidebar([
     'name'          => __('Primary', 'sage'),
     'id'            => 'sidebar-primary',
-    'before_widget' => '<section class="ps ps--light widget %1$s %2$s">',
-    'after_widget'  => '</section>',
+    'before_widget' => '<section class="ps widget %1$s %2$s"><div class="row container"><div class="columns">',
+    'after_widget'  => '</div></div></section>',
     'before_title'  => '<h3>',
     'after_title'   => '</h3>'
   ]);
@@ -85,8 +85,10 @@ function display_sidebar() {
     // The sidebar will NOT be displayed if ANY of the following return true.
     // @link https://codex.wordpress.org/Conditional_Tags
     is_404(),
-    is_front_page(),
-    is_page_template('template-custom.php'),
+    is_home(),
+    is_singular('post' ),
+    is_page_template('template-contact.php'),
+    is_page_template('template-accordion.php'),
   ]);
 
   return apply_filters('sage/display_sidebar', $display);

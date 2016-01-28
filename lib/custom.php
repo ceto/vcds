@@ -102,10 +102,16 @@ function vcds_metaboxes() {
         'type'       => 'wysiwyg'
     ) );
     $cmb_homepage->add_field( array(
-        'name'       => __( 'Helper', 'cmb2' ),
+        'name'       => __( '2. blokk', 'cmb2' ),
         'desc'       => __( 'Nyitóoldal 3. szöveges blokk képpel', 'cmb2' ),
         'id'         => $prefix . 'content2',
         'type'       => 'wysiwyg'
+    ) );
+    $cmb_homepage->add_field( array(
+        'name'       => __( 'Háttérkép az 2. blokkhoz', 'cmb2' ),
+        'desc'       => __( 'Nyitóoldal 2. szöveges blokk háttérképe', 'cmb2' ),
+        'id'         => $prefix . 'content2_bg',
+        'type'       => 'file'
     ) );
     $cmb_homepage->add_field( array(
         'name'       => __( 'Harmadik blokk', 'cmb2' ),
@@ -352,7 +358,7 @@ $discl = $instance['discl'];
 // before and after widget arguments are defined by themes
 echo $args['before_widget'];
 
-$dloutput = '<div class="row container">
+$dloutput = '<div class="row">
               <div class="columns medium-7 large-8">'.$discl.'</div>
               <div class="columns medium-5 large-4">
                 <div class="widget widget--dl">

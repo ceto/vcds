@@ -1,4 +1,15 @@
 <?php use Roots\Sage\Titles; ?>
+<?php if (has_post_thumbnail()) : ?>
+  <?php
+    $thumb = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' );
+    $url = $thumb['0'];
+  ?>
+  <style>
+  .hero__block {
+    background-image: url(<?=$url ?>);
+  }
+  </style>
+<?php endif; ?>
 <header class="hero hero--home" role="banner">
   <div class="hero__content">
     <div class="hero__block">

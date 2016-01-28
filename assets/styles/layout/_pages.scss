@@ -30,7 +30,7 @@ body, html {
 .ps {
   position: relative;
   padding:4rem 0;
-  background-color: $white;
+  //background-color: $white;
 }
 
 .ps--kispad {
@@ -43,7 +43,7 @@ body, html {
 }
 
 .ps--light {
-  background-color: $white-smoke;
+  background-color: $aluminum;
 }
 .ps--inverse {
   color:$white;
@@ -64,7 +64,7 @@ body, html {
 
 
 .page-template-template-accordion {
-  .sidebar {
+  .menusidebar {
     padding-top: 2rem;
   }
   .content {

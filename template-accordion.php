@@ -2,8 +2,10 @@
 /**
  * Template Name: Dokumentációs oldalsablon
  */
-?>
 
+  use Roots\Sage\Setup;
+  use Roots\Sage\Wrapper;
+?>
 <?php while (have_posts()) : the_post(); ?>
   <?php get_template_part('templates/hero', 'subpage'); ?>
   <section class="ps ps--nopad">
@@ -11,7 +13,7 @@
 
       <div class="columns">
         <div class="row">
-          <div class="columns medium-4 large-3 sidebar">
+          <div class="columns medium-4 large-3 menusidebar">
               <?php
                 $actpageid = $post->ID;
                 $the_parents = new WP_Query( array(
@@ -61,10 +63,9 @@
 
     </div>
   </section>
-
-
-
-
-
-
 <?php endwhile; ?>
+<?php if (Setup\display_sidebar()) : ?>
+  <aside class="sidebar">
+    <?php include Wrapper\sidebar_path(); ?>
+  </aside><!-- /.sidebar -->
+<?php endif; ?>

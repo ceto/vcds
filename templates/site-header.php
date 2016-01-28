@@ -1,7 +1,7 @@
 <header class="siteheader">
   <div class="row container">
     <div class="columns medium-3">
-      <a class="brand" href="<?= esc_url(home_url('/')); ?>">VCDS<span>autodiagnosztika</span></a>
+      <a class="brand" href="<?= esc_url(home_url('/')); ?>"><?php bloginfo('name'); ?><span><?php bloginfo('description'); ?></span></a>
       <label for="navtoggle" class="menutoggler">MENÜ</label>
     </div>
     <div class="columns medium-9">

@@ -2,6 +2,8 @@
 /**
  * Template Name: Contact Template
  */
+  use Roots\Sage\Setup;
+  use Roots\Sage\Wrapper;
 ?>
 
 <?php while (have_posts()) : the_post(); ?>
@@ -40,7 +42,7 @@
 
 
 
-  <section class="ps ps--light">
+  <section class="ps">
     <div class="row container">
       <div class="columns">
         <div class="row">
@@ -90,8 +92,10 @@
       </div>
     </div>
   </section>
-
-
-
-
 <?php endwhile; ?>
+
+<?php if (Setup\display_sidebar()) : ?>
+  <aside class="sidebar">
+    <?php include Wrapper\sidebar_path(); ?>
+  </aside><!-- /.sidebar -->
+<?php endif; ?>

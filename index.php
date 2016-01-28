@@ -1,3 +1,7 @@
+<?php
+  use Roots\Sage\Setup;
+  use Roots\Sage\Wrapper;
+?>
 <?php get_template_part('templates/hero', 'page'); ?>
 
 <?php if (!have_posts()) : ?>
@@ -20,3 +24,10 @@
 <?php endif; ?>
 
 <?php the_posts_navigation(); ?>
+
+<?php if (Setup\display_sidebar()) : ?>
+  <aside class="sidebar">
+    <?php include Wrapper\sidebar_path(); ?>
+  </aside><!-- /.sidebar -->
+<?php endif; ?>
+
